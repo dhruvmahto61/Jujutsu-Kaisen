@@ -4,7 +4,7 @@ A visually engaging anime-inspired landing page based on **Jujutsu Kaisen**.
 This project focuses on clean design, responsive layout, and capturing the dark aesthetic of the anime using pure frontend technologies.
 
 🔗 **Live Demo:**
-https://dhruvmahto61.github.io/Jujutsu-Kaisen/
+https://jujustsukaisen.netlify.app/
 
 ---
 
