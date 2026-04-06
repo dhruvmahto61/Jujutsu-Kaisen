@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUJUTSU KAISEN • Fan Domain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), 
+                    url('https://images.alphacoders.com/134/1345576.jpg');
+  background-size: cover;
+  background-position: center;
+}
+    .character-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(185, 28, 28, 0.6);
+    }
+    .tab-active {
+      border-bottom: 4px solid #b91c1c;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-red-900">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3 text-3xl font-black tracking-widest">
+        <span class="text-red-600">呪</span> JUJUTSU KAISEN
+      </div>
+      <div class="flex gap-8 text-sm uppercase tracking-widest">
+        <a href="#" class="hover:text-red-500 transition">Home</a>
+        <a href="#characters" class="hover:text-red-500 transition">Characters</a>
+        <a href="#gallery" class="hover:text-red-500 transition">Gallery</a>
+        <a href="#join" class="hover:text-red-500 transition">Join Domain</a>
+      </div>
+      <div class="text-red-500 text-2xl"><i class="fas fa-skull"></i></div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex items-center justify-center text-center">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="text-7xl md:text-8xl font-black tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-purple-600">
+        WELCOME TO THE<br>CURSED FAN DOMAIN
+      </h1>
+      <p class="text-2xl text-gray-300 mb-10"></p>
+      <button onclick="document.getElementById('characters').scrollIntoView({behavior: 'smooth'})" 
+              class="bg-red-600 hover:bg-red-700 px-12 py-5 rounded-full text-xl font-bold transition">
+        ENTER THE SHIBUYA INCIDENT →
+      </button>
+      
+    </div>
+  </section>
+
+  <!-- Characters Section -->
+  <section id="characters" class="py-24 bg-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-6xl font-bold text-center mb-16 text-red-500">MAIN SORCERERS & CURSES</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Yuji Itadori -->
+        <div class="bg-zinc-900 rounded-3xl overflow-hidden character-card transition-all">
+          <img src="/images/yuji itadori.jpg">
+          <div class="p-8">
+
+            <h3 class="text-3xl font-bold mb-1">Yuji Itadori</h3>
+            <p class="text-red-400 text-sm mb-6">The Vessel of Sukuna</p>
+            
+            
+            <div class="flex gap-4 border-b border-zinc-700 pb-4 mb-6">
+              <button onclick="switchTab(this, 'yuji-powers')" class="tab-active px-4 py-2 text-sm font-medium">Powers</button>
+              <button onclick="switchTab(this, 'yuji-family')" class="px-4 py-2 text-sm font-medium">Family</button>
+              <button onclick="switchTab(this, 'yuji-rel')" class="px-4 py-2 text-sm font-medium">Relationships</button>
+            </div>
+
+            <div id="yuji-powers" class="tab-content">
+              <p><strong>Superhuman Strength & Speed</strong><br>Divergent Fist, Black Flash<br>Blood Manipulation & Shrine (later)</p>
+              <p class="text-xs text-gray-500 mt-4">Can host Sukuna without losing control easily.</p>
+            </div>
+            <div id="yuji-family" class="tab-content hidden">
+              <p>Grandson of Wasuke Itadori<br>Son of Jin & Kaori Itadori<br>Connected to Sukuna (uncle theory via twin soul)</p>
+            </div>
+            <div id="yuji-rel" class="tab-content hidden">
+              <p>Best friends with Megumi & Nobara<br>Mentor: Gojo Satoru<br>Host of Ryomen Sukuna</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Megumi Fushiguro -->
+        <div class="bg-zinc-900 rounded-3xl overflow-hidden character-card transition-all">
+          <img src="/images/megumi.jpg">
+          <div class="p-8">
+            <h3 class="text-3xl font-bold mb-1">Megumi Fushiguro</h3>
+            <p class="text-red-400 text-sm mb-6">Ten Shadows Technique</p>
+            
+            <div class="flex gap-4 border-b border-zinc-700 pb-4 mb-6">
+              <button onclick="switchTab(this, 'meg-powers')" class="tab-active px-4 py-2 text-sm font-medium">Powers</button>
+              <button onclick="switchTab(this, 'meg-family')" class="px-4 py-2 text-sm font-medium">Family</button>
+              <button onclick="switchTab(this, 'meg-rel')" class="px-4 py-2 text-sm font-medium">Relationships</button>
+            </div>
+
+            <div id="meg-powers" class="tab-content">
+              <p><strong>Ten Shadows Technique</strong><br>Divine Dogs, Nue, Mahoraga<br>Shadow manipulation & summoning</p>
+            </div>
+            <div id="meg-family" class="tab-content hidden">
+              <p>Son of Toji Fushiguro (Sorcerer Killer)<br>Step-sister: Tsumiki Fushiguro<br>Zenin Clan bloodline</p>
+            </div>
+            <div id="meg-rel" class="tab-content hidden">
+              <p>Close with Yuji & Nobara<br>Adopted/mentored by Gojo</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nobara Kugisaki -->
+        <div class="bg-zinc-900 rounded-3xl overflow-hidden character-card transition-all">
+        <img src="/images/nobara.jpg">
+          <div class="p-8">
+            <h3 class="text-3xl font-bold mb-1">Nobara Kugisaki</h3>
+            <p class="text-red-400 text-sm mb-6">Straw Doll Technique</p>
+            
+            <div class="flex gap-4 border-b border-zinc-700 pb-4 mb-6">
+              <button onclick="switchTab(this, 'nob-powers')" class="tab-active px-4 py-2 text-sm font-medium">Powers</button>
+              <button onclick="switchTab(this, 'nob-family')" class="px-4 py-2 text-sm font-medium">Family</button>
+              <button onclick="switchTab(this, 'nob-rel')" class="px-4 py-2 text-sm font-medium">Relationships</button>
+            </div>
+
+            <div id="nob-powers" class="tab-content">
+              <p><strong>Straw Doll Technique</strong><br>Resonance, Hairpin<br>Nail & Hammer attacks</p>
+            </div>
+            <div id="nob-family" class="tab-content hidden">
+              <p>From a small village<br>Grandmother raised her<br>Strong independent background</p>
+            </div>
+            <div id="nob-rel" class="tab-content hidden">
+              <p>Tight trio with Yuji & Megumi<br>Fierce loyalty to friends</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Satoru Gojo -->
+        <div class="bg-zinc-900 rounded-3xl overflow-hidden character-card transition-all">
+          <img src="/images/gojo.jpg">
+          <div class="p-8">
+            <h3 class="text-3xl font-bold mb-1">Satoru Gojo</h3>
+            <p class="text-red-400 text-sm mb-6">The Strongest</p>
+            
+            <div class="flex gap-4 border-b border-zinc-700 pb-4 mb-6">
+              <button onclick="switchTab(this, 'gojo-powers')" class="tab-active px-4 py-2 text-sm font-medium">Powers</button>
+              <button onclick="switchTab(this, 'gojo-family')" class="px-4 py-2 text-sm font-medium">Family</button>
+              <button onclick="switchTab(this, 'gojo-rel')" class="px-4 py-2 text-sm font-medium">Relationships</button>
+            </div>
+
+            <div id="gojo-powers" class="tab-content">
+              <p><strong>Limitless + Six Eyes</strong><br>Infinity, Hollow Purple<br>Domain Expansion: Unlimited Void</p>
+            </div>
+            <div id="gojo-family" class="tab-content hidden">
+              <p>Gojo Clan heir<br>First in 400 years with both techniques</p>
+            </div>
+            <div id="gojo-rel" class="tab-content hidden">
+              <p>Teacher & protector of Yuji, Megumi<br>Best friend (former): Suguru Geto</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ryomen Sukuna -->
+        <div class="bg-zinc-900 rounded-3xl overflow-hidden character-card transition-all">
+           <img src="/images/sukuna.jpg">
+          <div class="p-8">
+            <h3 class="text-3xl font-bold mb-1">Ryomen Sukuna</h3>
+            <p class="text-red-400 text-sm mb-6">King of Curses</p>
+            
+            <div class="flex gap-4 border-b border-zinc-700 pb-4 mb-6">
+              <button onclick="switchTab(this, 'suk-powers')" class="tab-active px-4 py-2 text-sm font-medium">Powers</button>
+              <button onclick="switchTab(this, 'suk-family')" class="px-4 py-2 text-sm font-medium">Background</button>
+              <button onclick="switchTab(this, 'suk-rel')" class="px-4 py-2 text-sm font-medium">Relationships</button>
+            </div>
+
+            <div id="suk-powers" class="tab-content">
+              <p><strong>Shrine, Cleave, Dismantle</strong><br>Malevolent Shrine Domain<br>Fire Arrow, Regeneration</p>
+            </div>
+            <div id="suk-family" class="tab-content hidden">
+              <p>Heian Era King<br>Twins theory with Yuji's lineage</p>
+            </div>
+            <div id="suk-rel" class="tab-content hidden">
+              <p>Host: Yuji Itadori (initially)<br>Later possesses Megumi</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-12 text-red-500">Cursed Gallery 📸</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <img src="https://source.unsplash.com/random/600x600/?gojo-fight" class="rounded-2xl hover:scale-105 transition">
+        <img src="https://source.unsplash.com/random/600x600/?sukuna-domain" class="rounded-2xl hover:scale-105 transition">
+        <img src="https://source.unsplash.com/random/600x600/?shibuya-incident" class="rounded-2xl hover:scale-105 transition">
+        <img src="https://source.unsplash.com/random/600x600/?jujutsu-sorcerers" class="rounded-2xl hover:scale-105 transition">
+      </div>
+    </div>
+  </section>
+
+  <!-- Join -->
+  <section id="join" class="py-24 bg-gradient-to-b from-black to-red-950">
+    <div class="max-w-2xl mx-auto text-center px-6">
+      <h2 class="text-6xl font-black mb-6">BECOME A CURSED FAN</h2>
+      <p class="text-xl text-gray-400 mb-10">Get exclusive updates, memes, theories & more in your inbox</p>
+      <form class="space-y-6">
+        <input type="text" placeholder="Your Jujutsu Name" class="w-full bg-zinc-900 border border-red-900 rounded-2xl px-8 py-6 focus:outline-none focus:border-red-600">
+        <input type="email" placeholder="Email (to bind the vow)" class="w-full bg-zinc-900 border border-red-900 rounded-2xl px-8 py-6 focus:outline-none focus:border-red-600">
+        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 py-6 rounded-2xl text-xl font-bold transition">
+          BIND THE CURSE • JOIN NOW
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-12 text-center text-gray-500 text-sm border-t border-red-900">
+    © 2026 Jujutsu Kaisen Fan Domain • Made with cursed energy for real ones ❤️<br>
+    All rights belong to Gege Akutami & MAPPA
+  </footer>
+
+  <script>
+    function switchTab(btn, tabId) {
+      const card = btn.parentElement.parentElement;
+      card.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      card.querySelectorAll('button').forEach(b => b.classList.remove('tab-active'));
+      document.getElementById(tabId).classList.remove('hidden');
+      btn.classList.add('tab-active');
+    }
+  </script>
+</body>
+</html>
